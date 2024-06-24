@@ -1,0 +1,15 @@
+{ 
+  "welcomeFile": "index.html", 
+  "authenticationMethod": "none",
+  "routes": [ 
+    {
+		"source": "^/app/(.*)$
+		"target": "$1",
+		"localDir": "./"
+	  },
+    { 
+      "source": "^/(.*)$",
+      "destination": "srv-api"
+    } 
+  ] 
+} 

@@ -1,0 +1,18 @@
+### Get the Books
+GET http://localhost:4004/odata/v4/catalog/Books
+
+### Get Authors
+GET http://localhost:4004/odata/v4/catalog/Authors
+
+### Post Books
+POST  http://localhost:4004/odata/v4/catalog/Books
+Content-Type: application/json
+
+{"ID": 1,"title": "Srinivasa","stock": 12,"authors_ID": 101}
+
+
+### Post Orders
+POST http://localhost:4004/odata/v4/catalog/Orders
+Content-Type: application/json
+
+{"book_ID" : 421, "quantity": 10 }
